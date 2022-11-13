@@ -1,0 +1,23 @@
+#title {
+  background-color: black;
+  color: white;
+}
+h1 {
+  display: inline;
+}
+#cloud {
+  color: #00ffff;
+}
+
+#subtitle {
+  background-color: purple;
+  color: white;
+  font-style: italic;
+  text-align: center;
+}
+
+#contact {
+  text-decoration: underline;
+  background-color: #9fc5f8;
+  text-align: right;
+}
