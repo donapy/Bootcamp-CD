@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NinjaMan</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .row {
+        line-height: 0;
+      }
+      .wall {
+        background-color: blue;
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+      }
+      .sushi {
+        background-color: black;
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+        background-image: url("img/sushi.png");
+        background-size: contain;
+      }
+      .onigiri {
+        background-color: black;
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+        background-image: url("img/onigiri.png");
+        background-size: contain;
+      }
+      .blank {
+        background-color: black;
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+      }
+      #ninjaman {
+        background-color: black;
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+        background-image: url("img/ninja.gif");
+        background-size: contain;
+        position: absolute;
+        /* left: 40px;
+        top: 40px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="world"></div>
+    <div id="ninjaman"></div>
+    <label>Points:</label>
+    <label id="pointos"></label>
+  </body>
+  <script type="text/javascript">
+    var points = 0;
+    var world = [
+      [1, 1, 1, 1, 1, 1, 1, 1],
+      [1, 0, 0, worldGen(), worldGen(), worldGen(), worldGen(), 1],
+      [1, 0, worldGen(), worldGen(), worldGen(), worldGen(), worldGen(), 1],
+      [1, 0, 0, worldGen(), worldGen(), worldGen(), 0, 1],
+      [1, worldGen(), 0, worldGen(), 0, worldGen(), worldGen(), 1],
+      [1, worldGen(), 0, 0, worldGen(), worldGen(), 0, 1],
+      [1, worldGen(), 0, worldGen(), worldGen(), 0, 0, 1],
+      [1, 0, worldGen(), 0, 0, worldGen(), 0, 1],
+      [1, 0, worldGen(), worldGen(), 0, worldGen(), 0, 1],
+      [1, worldGen(), worldGen(), 0, 0, worldGen(), 0, 1],
+      [1, 1, 1, 1, 1, 1, 1, 1],
+    ];
+
+    var worldDict = {
+      0: "blank",
+      1: "wall",
+      2: "sushi",
+      3: "onigiri",
+    };
+
+    function drawWorld() {
+      output = "";
+      for (let row = 0; row < world.length; row++) {
+        output += "<div class = 'row'>";
+        for (var x = 0; x < world[row].length; x++) {
+          //output += worldDict[world[row][x]];
+          output += "<div class = '" + worldDict[world[row][x]] + "'> </div>";
+        }
+      }
+      output += "</div>";
+      document.getElementById("world").innerHTML = output;
+    }
+    drawWorld();
+
+    var ninjaman = {
+      x: 1,
+      y: 1,
+    };
+
+    function drawNinjaman() {
+      document.getElementById("ninjaman").style.top = ninjaman.y * 40 + "px";
+      document.getElementById("ninjaman").style.left = ninjaman.x * 40 + "px";
+    }
+    drawNinjaman();
+
+    function worldGen() {
+      var x = Math.floor(Math.random() * 5);
+      if (x === 4) {
+        return 1;
+      }
+      return x;
+    }
+    document.onkeydown = function (e) {
+      if (e.keyCode == 37 && world[ninjaman.y][ninjaman.x - 1] !== 1) {
+        // LEFT
+        ninjaman.x--;
+      }
+      if (e.keyCode == 38 && world[ninjaman.y - 1][ninjaman.x] !== 1) {
+        // TOP
+        ninjaman.y--;
+      }
+      if (e.keyCode == 39 && world[ninjaman.y][ninjaman.x + 1] !== 1) {
+        // RIGHT
+        ninjaman.x++;
+      }
+      if (e.keyCode == 40 && world[ninjaman.y + 1][ninjaman.x] !== 1) {
+        // DOWN
+        ninjaman.y++;
+      }
+      if (world[ninjaman.y][ninjaman.x] !== 0) {
+        switch (world[ninjaman.y][ninjaman.x]) {
+          case 2:
+            //sushi
+            points += 10;
+            break;
+          case 3:
+            points += 20;
+            break;
+          default:
+            break;
+        }
+        world[ninjaman.y][ninjaman.x] = 0;
+        document.getElementById("pointos").innerText = points;
+      }
+
+      drawWorld();
+      drawNinjaman();
+    };
+  </script>
+</html>
