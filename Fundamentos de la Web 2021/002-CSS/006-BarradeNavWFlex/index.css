@@ -1,0 +1,39 @@
+* {
+  font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: grey;
+}
+
+.nav-title {
+  justify-content: flex-start;
+  margin: 24px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  align-items: flex-end;
+  margin: 5px;
+}
+
+.btn {
+  background-color: #17a2b8;
+  box-shadow: 3px 4px 0px 0px #000000;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
