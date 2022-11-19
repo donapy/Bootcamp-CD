@@ -1,0 +1,57 @@
+* {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.tarjeta {
+  margin: 50px auto;
+  width: 650px;
+  border: 2px solid rgba(189, 189, 189, 0.863);
+}
+
+#imgprofile {
+  width: 100px;
+  position: fixed;
+  margin: 30px;
+
+  /* top: 90px; */
+}
+
+#uppart {
+  background-color: aquamarine;
+  height: 80px;
+}
+
+#downpart {
+  background-color: rgba(231, 231, 231, 0.199);
+  height: 280px;
+}
+
+#h1user {
+  padding: 60px 0px 0px 10px;
+}
+.ubication {
+  height: 40px;
+  padding: 5px 0px 0px 0px;
+}
+
+#imgico {
+  height: 20px;
+  padding: 13px 0px 0px 10px;
+}
+
+#label1 {
+  font-size: 24px;
+  padding: 10px;
+}
+
+p {
+  padding: 20px 0px 0px 10px;
+}
+
+#label2 {
+  font-size: 16px;
+  padding: 10px;
+}
