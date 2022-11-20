@@ -1,0 +1,197 @@
+* {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+body {
+  height: 100%;
+}
+#header {
+  background-color: black;
+  height: 75px;
+  width: 100%;
+  display: flex;
+}
+
+#main-content {
+  /* background-color: pink; */
+  height: 92.1vh;
+  width: 100%;
+  display: flex;
+}
+
+#left {
+  /* background-color: blue; */
+  flex: 2;
+  margin: 25px 10px 5px 6%;
+}
+#right {
+  /* background-color: green; */
+  flex: 1;
+  margin: 25px 6% 5px 10px;
+}
+
+/*  left */
+#profile {
+  /* background-color: red; */
+  flex: 1;
+  height: 50%;
+
+  margin: 3%;
+  border: 2px solid rgb(114, 114, 114);
+}
+
+#education {
+  background-color: yellow;
+  flex: 1;
+  height: 40%;
+  margin: 3%;
+  border: 2px solid rgb(114, 114, 114);
+}
+
+/*  right */
+#connection-request {
+  background-color: red;
+  flex: 1;
+  height: 36%;
+
+  margin: 6% 3% 3% 3%;
+  border: 2px solid rgb(114, 114, 114);
+}
+
+#your-connections {
+  background-color: yellow;
+  flex: 1;
+  height: 40%;
+  margin: 3%;
+  border: 2px solid rgb(114, 114, 114);
+}
+
+#nav-header {
+  margin: 25px 25px 25px 6%;
+  flex: 6;
+}
+
+#nav-header-button {
+  margin: 30px;
+  flex: 1;
+}
+
+#btn-signout {
+  background-color: aquamarine;
+  padding: 4px;
+  color: grey;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  /* align-items: flex-end; */
+  margin: 10px;
+  color: white;
+}
+
+#perfil {
+  font-size: 32px;
+}
+
+#my-perfil {
+  font-weight: bold;
+}
+
+/* tarjeta */
+#imgprofile {
+  width: 100px;
+  position: fixed;
+  margin: 50px 0px 0px 20px;
+}
+
+.uppart {
+  background-color: aquamarine;
+  height: 25%;
+}
+
+.downpart {
+  background-color: rgb(255, 255, 255);
+  height: 75%;
+}
+
+#h1user {
+  padding: 60px 0px 0px 10px;
+}
+.ubication {
+  height: 40px;
+  padding: 5px 0px 0px 0px;
+}
+
+#imgico {
+  height: 20px;
+  padding: 13px 0px 0px 10px;
+}
+
+#label1 {
+  font-size: 24px;
+  padding: 10px;
+}
+
+p {
+  padding: 20px 0px 0px 10px;
+}
+
+#label2 {
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* Education */
+#ed-up {
+  background-color: grey;
+}
+
+.title-up {
+  color: white;
+  display: inline-block;
+  font-size: 30px;
+  padding: 20px;
+}
+
+#title-cd {
+  padding: 15px 0px 0px 5px;
+}
+
+.labelblock {
+  display: block;
+  padding: 10px 0px 10px 5px;
+}
+
+#boldlabel {
+  font-weight: bold;
+}
+
+.pic-mini {
+  width: 30px;
+  display: inline;
+  margin: 10px 0px 0px 10px;
+}
+
+h4 {
+  display: inline;
+  margin: 10px;
+}
+
+.boton-co {
+  display: inline;
+  float: right;
+  margin-right: 20px;
+}
+
+#view-more {
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 20px;
+  margin: 28px 0px 0px 0px;
+
+  height: 50px;
+  border-top: 2px solid rgb(114, 114, 114);
+}
