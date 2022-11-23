@@ -1,0 +1,159 @@
+/* -- se resetea y da un estilo a todo */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252a;
+  font-family: Roboto, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+/* -- NavBar START -- */
+
+.li-navbar,
+.a-navbar,
+.btn-rounded {
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo-navbar {
+  cursor: pointer;
+  /* width: 60px; */
+}
+
+.nav_links li {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+.nav_links li a:hover {
+  color: #0088a9;
+}
+
+.btn-rounded {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-rounded:hover {
+  background-color: rgba(0, 136, 169, 0.6);
+}
+
+/* -- NavBar END -- */
+
+/* -- Content blocks START -- */
+
+.content {
+  /* background-color: blue;
+  height: 750px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#content-left {
+  background-color: rgba(255, 255, 255, 0.836);
+  height: 550px;
+  width: 600px;
+  margin: 50px;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+#content-right {
+  background-color: rgba(0, 0, 0, 0.836);
+  height: 550px;
+  width: 600px;
+  margin: 50px;
+}
+
+/* -- Content blocks END -- */
+
+/* -- Content elements START */
+
+.content-title,
+.content-parrafo,
+.content-img {
+  background-color: transparent;
+}
+
+.content-title {
+  text-align: center;
+  padding: 50px 0px 5px 0px;
+  font-size: 42px;
+}
+
+.content-parrafo {
+  text-align: center;
+  font-size: 18px;
+  padding: 25px 25px 5px 25px;
+}
+
+.content-img {
+  width: 270px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title-white {
+  color: white;
+}
+
+.content-btn1 {
+  box-shadow: 5px 5px 0px 0px #ba041f;
+  background-color: #e61531;
+  border-radius: 25px;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  padding: 15px 17px;
+  margin: 25px;
+}
+.content-btn1:hover {
+  background-color: #ff405d;
+}
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* -- Content elements END */
+
+/* -- Footer START */
+footer {
+  text-align: center;
+  padding: 30px 10%;
+  color: white;
+}
+
+.li-footer {
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.footer_links li {
+  display: block;
+  margin: 10px 20px;
+}
+
+/* -- Footer END */
