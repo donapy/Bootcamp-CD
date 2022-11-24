@@ -8,6 +8,70 @@
     <title>Dojonary</title>
   </head>
   <body>
+    <header>
+      <span class="header-title">Dojonary</span>
+      <input type="text" value="" id="header-search" placeholder="Search" />
+      <button class="btn-1" onclick="loginText(this)">Login</button>
+    </header>
+    <div id="main-content">
+      <div id="content-left">
+        <div class="content-square-left">
+          <div class="content-square-left-square-left">
+            <span class="span-ninja">ninja</span>
+            <em class="em-noun">noun</em>
+            <span class="span-plural">Plural: <em>ninjas</em></span>
+            <button class="likes" onclick="likeButton()">13 likes</button>
+          </div>
+          <div class="content-square-left-square-right">
+            <span class="span-square-right"
+              >A practitioner skilled in the
+              <a href="https://es.wikipedia.org/wiki/Japanese" target="_blank"
+                >Japanese</a
+              >
+              art of
+              <a href="https://es.wikipedia.org/wiki/Ninjutsu" target="_blank"
+                >ninjutsu</a
+              ></span
+            >
+          </div>
+        </div>
+        <div class="content-square-left">
+          <div class="content-square-left-square-left">
+            <span class="span-ninja">ninja</span>
+            <em class="em-noun">noun</em>
+            <span class="span-plural">Plural: <em>ninjas</em></span>
+            <button class="likes" onclick="likeButton()">13 likes</button>
+          </div>
+          <div class="content-square-left-square-right">
+            <span class="span-square-right"
+              >A
+              <a href="https://en.wikipedia.org/wiki/Programmer" target="_blank"
+                >programmer</a
+              >
+              who breaks down problems with
+              <a href="https://en.wikipedia.org/wiki/Zen" target="_blank">zen</a
+              >-like focus</span
+            >
+          </div>
+        </div>
+      </div>
+      <div id="content-right">
+        <div class="content-square-right">
+          <div id="content-square-right-top">
+            <span id="dojonary">Dojonary is defined by <b>YOU</b></span>
+          </div>
+          <div id="content-square-right-down">
+            <button
+              class="btn-1"
+              id="btn-definition"
+              onclick="removeButton(this)"
+            >
+              Add Definition
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./app.js"></script>
   </body>
 </html>
