@@ -28,9 +28,40 @@ h2 {
 
 #container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 50px;
+  /* align-items: center; */
+  justify-content: center;
+  /* flex: 2; */
+}
+
+#izq {
+  width: 200px;
+  height: 30vh;
+  /* background-color: pink; */
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
   align-items: center;
-  flex: 2;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.p-profile {
+  margin: 20px 0px;
+  font-weight: bold;
+}
+
+#der {
+  width: 500px;
+  height: 60vh;
+  /* background-color: grey; */
+}
+
+#img-profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .square {
@@ -39,11 +70,11 @@ h2 {
   width: 400px;
   border-radius: 10px;
   padding: 20px;
-  display: inline-flex;
-  justify-content: space-around;
-  flex-direction: column;
+  /* display: inline-flex; */
+  /* justify-content: space-around; */
+  /* flex-direction: column; */
   margin-bottom: 20px;
-  flex: 1;
+  /* flex: 1; */
 }
 
 .up-in-square {
