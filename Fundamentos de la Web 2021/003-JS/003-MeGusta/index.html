@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Likes</title>
+  </head>
+  <body>
+    <header>
+      <h1>Network</h1>
+    </header>
+    <h2>Your Feed</h2>
+    <main id="container">
+      <!-- primer cuadro -->
+      <div class="square">
+        <div class="up-in-square">
+          <p class="title-user">Some User</p>
+          <p class="p-likes"><span id="count-likes1"></span> like(s)</p>
+          <button class="button-likes" onclick="sumLikes(1)">Like</button>
+        </div>
+        <div class="bot-in-square">
+          <p class="p-bot">
+            This is some filler text, it can say anything we like
+          </p>
+        </div>
+      </div>
+      <!-- segundo cuadro -->
+      <div class="square">
+        <div class="up-in-square">
+          <p class="title-user">Some User</p>
+          <p class="p-likes"><span id="count-likes2"></span> like(s)</p>
+          <button class="button-likes" onclick="sumLikes(2)">Like</button>
+        </div>
+        <div class="bot-in-square">
+          <p class="p-bot">
+            This is some filler text, it can say anything we like
+          </p>
+        </div>
+      </div>
+      <!-- tercer cuadro -->
+      <div class="square">
+        <div class="up-in-square">
+          <p class="title-user">Some User</p>
+          <p class="p-likes"><span id="count-likes3"></span> like(s)</p>
+          <button class="button-likes" onclick="sumLikes(3)">Like</button>
+        </div>
+        <div class="bot-in-square">
+          <p class="p-bot">
+            This is some filler text, it can say anything we like
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

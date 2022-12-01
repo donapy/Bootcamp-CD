@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+body {
+  height: 100vh;
+  padding: 0px 100px;
+}
+
+header {
+  background-color: black;
+  padding: 15px;
+  /* margin-bottom: 15px; */
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 2;
+}
+
+.square {
+  border: 2px solid black;
+  height: 125px;
+  width: 400px;
+  border-radius: 10px;
+  padding: 20px;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.up-in-square {
+  display: flex;
+  justify-content: space-around;
+  flex: 4;
+  font-weight: bold;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.title-user {
+  flex: 2;
+}
+
+.p-likes {
+  flex: 1;
+}
+
+.button-likes {
+  height: 30px;
+  background-color: rgba(255, 255, 0, 0.7);
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 9px #999;
+}
+
+.button-likes:hover {
+  background-color: rgba(255, 255, 0, 1);
+}
+
+.button-likes:active {
+  background-color: rgba(255, 255, 0, 1);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.bot-in-square {
+  font-weight: bold;
+}
