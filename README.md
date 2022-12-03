@@ -36,3 +36,9 @@
         - 001-EventOnClick
         - 002-VistaPreviaVideo
         - 003-MeGusta
+        - 004-HacerConexiones
+        - 005-TiempoDojo
+        - 007-FizzBuzz
+        - 008-DesafioDeBucles
+        - 009-DesafioArreglos
+        - 010-PizzeriaDojo

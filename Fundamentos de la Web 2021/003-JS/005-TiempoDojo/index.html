@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Tiempo Dojo</title>
+  </head>
+  <body>
+    <!-- Start - Header -->
+    <header>
+      <h1>DojoWeather</h1>
+      <div>
+        <h2 class="head-city" onclick="alerta()">Burbank</h2>
+        <h2 class="head-city" onclick="alerta()">Chicago</h2>
+        <h2 class="head-city" onclick="alerta()">Dallas</h2>
+      </div>
+    </header>
+    <!-- End - Header -->
+
+    <!-- Start - Main Body -->
+    <main>
+      <!-- Start - Bar with city name and the option to change temperature from celsius to fahrenheit -->
+      <div class="city-options-bar">
+        <div><h2 id="city-name">San Jose</h2></div>
+        <div>
+          <label for="temperature-choose">show temperature in</label>
+          <select
+            name="temperature-choose"
+            id="temperature-choose"
+            onchange="changeTemps(this.value)"
+          >
+            <option value="C">°C</option>
+            <option value="F">°F</option>
+          </select>
+        </div>
+      </div>
+      <!-- End - Bar with city name and the option to change temperature from celsius to fahrenheit -->
+
+      <!-- Start - Line break -->
+      <hr />
+      <!-- End - Line break -->
+
+      <!-- Start - Temperatures of 4 days -->
+      <div id="city-temps-days">
+        <!-- first day -->
+        <div class="temps-days">
+          <h3 class="temps-days-day">Today</h3>
+          <img
+            src="./assets/some_rain.png"
+            alt="img-temp"
+            class="temps-days-img"
+          />
+          <p class="temps-days-details">some rain</p>
+          <div class="temps-days-temperatures">
+            <span class="temps-days-tempmax" id="tempmax1">24°</span>
+            <span class="temps-days-tempmin" id="tempmin1">18°</span>
+          </div>
+        </div>
+        <!-- second day -->
+        <div class="temps-days">
+          <h3 class="temps-days-day">Tomorrow</h3>
+          <img
+            src="./assets/some_sun.png"
+            alt="img-temp"
+            class="temps-days-img"
+          />
+          <p class="temps-days-details">some sun</p>
+          <div class="temps-days-temperatures">
+            <span class="temps-days-tempmax" id="tempmax2">27°</span>
+            <span class="temps-days-tempmin" id="tempmin2">19°</span>
+          </div>
+        </div>
+        <!-- third day -->
+        <div class="temps-days">
+          <h3 class="temps-days-day">Friday</h3>
+          <img
+            src="./assets/some_clouds.png"
+            alt="img-temp"
+            class="temps-days-img"
+          />
+          <p class="temps-days-details">some clouds</p>
+          <div class="temps-days-temperatures">
+            <span class="temps-days-tempmax" id="tempmax3">21°</span>
+            <span class="temps-days-tempmin" id="tempmin3">16°</span>
+          </div>
+        </div>
+        <!-- fourth day -->
+        <div class="temps-days">
+          <h3 class="temps-days-day">Saturday</h3>
+          <img
+            src="./assets/some_sun.png"
+            alt="img-temp"
+            class="temps-days-img"
+          />
+          <p class="temps-days-details">some sun</p>
+          <div class="temps-days-temperatures">
+            <span class="temps-days-tempmax" id="tempmax4">26°</span>
+            <span class="temps-days-tempmin" id="tempmin4">21°</span>
+          </div>
+        </div>
+      </div>
+      <!-- End - Temperatures of 4 days -->
+    </main>
+    <!-- End - Main Body-->
+
+    <!-- Start - Cookies -->
+    <section id="cookies">
+      <div id="img-cookie">
+        <img src="./assets/cookie.png" alt="img-cookie" />
+      </div>
+      <div id="center-texts-cookie">
+        <div id="title-cookie"><h3>Stop! Cookie time</h3></div>
+        <div id="text-cookie">
+          <p>
+            We use cookies (sadly not the edible ones) to personalize content
+            and ads, to provide social media features and to analyse our
+            traffic. <a href="#">Read more...</a>
+          </p>
+        </div>
+      </div>
+      <div id="button-cookie">
+        <button id="accept-cookie" onclick="removeCookie()">Accept</button>
+      </div>
+    </section>
+    <!-- End - Cookies -->
+    <script src="./index.js"></script>
+  </body>
+</html>
