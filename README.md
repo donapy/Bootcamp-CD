@@ -45,6 +45,10 @@
 
 ### 2- MERN
 
+    - JavaScript
+        - PredecirDestructuracion
+        - ConvertiraFlecha
+
     - Express
         - 001-PostmanPokemon
         - 002-ApiFalsa
