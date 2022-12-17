@@ -52,7 +52,8 @@
         - SuperNinja
 
     -React
-        -
+        - 001-PrimerReact
+        - 002-PrimerReactJSX
 
     - Express
         - 001-PostmanPokemon
