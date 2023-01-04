@@ -1,3 +1,4 @@
+/.vscode
 /MERN/Express/002-ApiFalsa/node_modules
 /MERN/Express/002-ApiFalsa/package-lock.json
 /MERN/MongoDB/002-APIdeBromas/node_modules
@@ -12,4 +13,5 @@
 /MERN/React/005-MasFormularios/masformularios/node_modules
 /MERN/React/006-ToDo/todolist/package-lock.json
 /MERN/React/006-ToDo/todolist/node_modules
-/.vscode
+/MERN/React/007-APIpokemon/apipokemon/package-lock.json
+/MERN/React/007-APIpokemon/apipokemon/node_modules
