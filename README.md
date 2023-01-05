@@ -58,6 +58,8 @@
         - 004-TodoJunto
         - 005-MasFormularios
         - 006-ToDo
+        - 007-APIpokemon
+        - 008-APIwalker
 
     - Express
         - 001-PostmanPokemon
