@@ -17,7 +17,7 @@ const FormProduct = () => {
       "http://localhost:5000/api/product/newProduct",
       inputs
     );
-    console.log(result.data);
+    // console.log(result.data);
     setProduct(result.data);
     setInputs({});
   };
