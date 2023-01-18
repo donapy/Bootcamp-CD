@@ -3,11 +3,31 @@ const ObjectIdVal = require("mongoose").Types.ObjectId;
 const Product = require("../models/productModel");
 
 // @desc    Get Product
-// @route   GET /api/product/getProduct/:_id?
+// @route   GET /api/product/getProduct/
 // @access  Public
 const getProduct = asyncHandler(async (req, res) => {
   try {
-    return res.status(200).send({ message: "Hello" });
+    const products = await Product.find(
+      {},
+      { _id: 1, title: 1, price: 1, description: 1 }
+    );
+    return res.status(200).send(products);
+  } catch (error) {
+    return res.status(500).send({ message: "Error, try again" });
+  }
+});
+
+// @desc    Get Product by Id
+// @route   GET /api/product/getProduct/:id
+// @access  Public
+const getProductById = asyncHandler(async (req, res) => {
+  try {
+    // console.log(`Entro: ${JSON.stringify(req.params._id)}`);
+    const products = await Product.findOne(
+      { _id: req.params._id },
+      { _id: 0, title: 1, price: 1, description: 1 }
+    );
+    return res.status(200).send(products);
   } catch (error) {
     return res.status(500).send({ message: "Error, try again" });
   }
@@ -96,4 +116,5 @@ module.exports = {
   newProduct,
   updateProduct,
   deleteProduct,
+  getProductById,
 };

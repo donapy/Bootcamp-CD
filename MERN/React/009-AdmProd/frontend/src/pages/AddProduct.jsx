@@ -19,10 +19,12 @@ const FormProduct = () => {
     );
     console.log(result.data);
     setProduct(result.data);
+    setInputs({});
   };
 
   return (
     <div id="formCreate">
+      <h2>Add New Product</h2>
       <form onSubmit={handleSubmit}>
         <p>Title</p>
         <input
