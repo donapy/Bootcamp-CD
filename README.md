@@ -61,6 +61,7 @@
         - 007-APIpokemon
         - 008-APIwalker
         - 009-AdministradorDeProductos
+        - 010-Autores
 
     - Express
         - 001-PostmanPokemon

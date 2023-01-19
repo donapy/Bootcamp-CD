@@ -12,13 +12,20 @@ const TodoTask = ({ task, deleteTask, completeTask }) => {
       >
         {task.taskName}
       </span>
-      <button
+      {/* <button
         onClick={() => {
           completeTask(task.taskName);
         }}
       >
         Completed
-      </button>
+      </button> */}
+      <input
+        type="checkbox"
+        name="taskCompleted"
+        value="taskCompleted"
+        checked={task.completed}
+        onChange={() => completeTask(task.taskName)}
+      />
       <button
         onClick={() => {
           deleteTask(task.taskName);

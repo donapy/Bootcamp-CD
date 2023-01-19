@@ -28,7 +28,7 @@ function App() {
     setTodoList(
       todoList.filter((task) => {
         if (task.taskName === taskNameToUpdate) {
-          task.completed = true;
+          task.completed = !task.completed;
         }
         return task;
       })
