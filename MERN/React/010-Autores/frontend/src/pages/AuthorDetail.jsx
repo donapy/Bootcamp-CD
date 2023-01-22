@@ -63,27 +63,11 @@ const AuthorDetail = () => {
           {/* <p>{author.title}</p>
           <p>{author.price}</p>
           <p>{author.description}</p> */}
-          <p>Title:</p>
+          <p>Name:</p>
           <input
             type="text"
-            value={author.title}
-            name="title"
-            onChange={handleChange}
-            readOnly={editable}
-          />
-          <p>Price:</p>
-          <input
-            type="number"
-            value={author.price}
-            name="price"
-            onChange={handleChange}
-            readOnly={editable}
-          />
-          <p>Description:</p>
-          <input
-            type="text"
-            value={author.description}
-            name="description"
+            value={author.name}
+            name="name"
             onChange={handleChange}
             readOnly={editable}
           />

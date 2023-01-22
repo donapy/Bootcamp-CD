@@ -7,10 +7,9 @@ const Author = require("../models/authorModel");
 // @access  Public
 const getAuthor = asyncHandler(async (req, res) => {
   try {
-    const authors = await Author.find(
-      {},
-      { _id: 1, title: 1, price: 1, description: 1 }
-    );
+    const authors = await Author.find({}, { _id: 1, name: 1 }).sort({
+      $natural: -1,
+    });
     return res.status(200).send(authors);
   } catch (error) {
     return res.status(500).send({ message: "Error, try again" });
@@ -25,7 +24,7 @@ const getAuthorById = asyncHandler(async (req, res) => {
     // console.log(`Entro: ${JSON.stringify(req.params._id)}`);
     const authors = await Author.findOne(
       { _id: req.params._id },
-      { _id: 0, title: 1, price: 1, description: 1 }
+      { _id: 0, name: 1 }
     );
     return res.status(200).send(authors);
   } catch (error) {
@@ -37,25 +36,21 @@ const getAuthorById = asyncHandler(async (req, res) => {
 // @route   POST /api/author/newAuthor
 // @access  Public
 const newAuthor = asyncHandler(async (req, res) => {
-  const { title, price, description } = req.body;
-  if (!title || !price || !description) {
+  const { name } = req.body;
+  if (!name || name.length < 3) {
     return res.status(400).send({
-      message: "Error, a new author need a title, price and description",
+      message: "Error, a new author need a name with at least 3 chars",
     });
   }
   const author = await Author.create({
-    title,
-    price,
-    description,
+    name,
   });
 
   if (author) {
     return res.status(201).json({
       success: true,
       _id: author._id,
-      title: author.title,
-      price: author.price,
-      description: author.description,
+      name: author.name,
     });
   } else {
     return res

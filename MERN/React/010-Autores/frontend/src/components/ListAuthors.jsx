@@ -8,7 +8,7 @@ const ListAuthors = (props) => {
       {props.items.map((author, key) => {
         return (
           <p key={key}>
-            <Link to={"/authors/" + author._id}>{author.title}</Link>
+            <Link to={"/authors/" + author._id}>{author.name}</Link>
           </p>
         );
       })}
