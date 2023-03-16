@@ -70,3 +70,12 @@
     - MongoDB
         - 001-UsandoMongoDB
         - 002-APIdeBromas
+
+### 3- Proyectos y Algoritmos
+    - Ejercicios
+        - Todo1.js - ToDo 1 de Array
+        - ToDo1-AlgorithmConcepts-Fundamentals.js - ToDo1 de Algorithm Concepts and Tips
+        -
+    
+    - Wireframes
+        - Estan todos los wireframes propuestos por Coding Dojo para proyectos
