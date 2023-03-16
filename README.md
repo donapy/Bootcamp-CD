@@ -73,9 +73,9 @@
 
 ### 3- Proyectos y Algoritmos
     - Ejercicios
-        - Todo1.js - ToDo 1 de Array
-        - ToDo1-AlgorithmConcepts-Fundamentals.js - ToDo1 de Algorithm Concepts and Tips
-        -
+        - Todo1-Arrays.js - ToDo 1 de Array
+        - ToDo1-AlgorithmConcepts.js - ToDo1 de Algorithm Concepts and Tips
+        - ToDo1-Strings.js - ToDo1 de Strings
     
     - Wireframes
         - Estan todos los wireframes propuestos por Coding Dojo para proyectos
