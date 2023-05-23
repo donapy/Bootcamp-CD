@@ -1,4 +1,4 @@
-﻿# En este repositorio se encuentra todo lo realizado por Donato Garcia para el bootcamp de MERN
+﻿# En este repositorio se encuentra todo lo realizado por mi para el bootcamp de MERN
 
     A continuacion se citara los contenidos dentro de este repositorio
 
